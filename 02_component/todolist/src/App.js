@@ -1,52 +1,37 @@
 import React from 'react'
 import Test from './Test';
+import Container from './Container';
+import InputContainer from './InputContainer';
 
 
 const {useState} = React;
 
 function App() {
 
-  const [names, setNames] = useState([
-    {id:1,name:"하이"},
-    {id:2,name:"안냥"}
-  ]);
+  const [todoList, setTodoList] = useState(['하이','안냥']);
+  const [input, setInput] = useState("");
+  const [color, setColor] = useState("black");
 
-  const [inputText, setInputText] = useState("");
-  const [nextId, setNextId] = useState(3);
-
-  const onChangeHandler = e => setInputText(e.target.value);
-
-  const onClickHandler = () => {
-    const changeNames = names.concat({
-      id:nextId,
-      name:inputText
-    });
-
-    setNames(changeNames);
-    setNextId(nextId+1);
-    setInputText("");
+  const changeInput = (e) => {
+    setInput(e.target.value);
   }
 
-  const onRemove = id => {
-    const changeNames = names.filter(name => name.id !== id);
-    setNames(changeNames);
+  const colorChange = (e) => {
+    setColor(e.target.value);
   }
 
-  const nameList = names.map(name => {
-    return (
-      <li key={name.id}>{name.name}
-        <input type="checkbox"/>
-      </li>
-    )
-  });
 
   return (
     <>
-      <ul>
-        {nameList}
-      </ul>
-      <input type="text" value={inputText} onChange={onChangeHandler}/>
-      <button onClick={onClickHandler}>추가</button>
+      <div>
+        <h1>TodoList</h1>
+
+        <button>다크모드</button>
+        <Container todoList={todoList} setTodoList={setTodoList} color={color}/>
+        <InputContainer setTodoList={setTodoList} todoList={todoList}/>
+        <input type="text" value={input} onChange={changeInput}/>
+        <button onClick={colorChange} value={input}>색변경</button>
+      </div>
     </>
   )
   
