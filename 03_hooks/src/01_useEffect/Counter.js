@@ -19,7 +19,7 @@ const Counter = () => {
             <button>타이머 추가</button>
             {<Counter/>};
         </>
-    )
+    );
 }
 
 export default Counter;
