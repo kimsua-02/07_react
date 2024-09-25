@@ -24,3 +24,5 @@ const SqareCalculator =() => {
 }
 
 export default SqareCalculator;
+
+// 완성 못함 조졋네

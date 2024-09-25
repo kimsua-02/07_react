@@ -16,6 +16,7 @@ import UseMemoComponent from './03_useMemo/03_performance-useMemo';
 import LocationComponent from './03_useMemo/04_object-type-problem';
 import NumSquareCalculator from './03_useMemo/05_Number-square-calculator.js';
 import SqareCalculator from './03_useMemo/05_Number-square-calculator.js';
+import TodoList from './03_useMemo/00_practice.js';
 
 function App() {
   const [message,setMessage] = useState("안녕하신지요");
@@ -37,7 +38,8 @@ function App() {
     {/* <ComplexCalcultor/> */}
     {/* <UseMemoComponent/> */}
     {/* <LocationComponent/> */}
-    <SqareCalculator/>
+    {/* <SqareCalculator/> */}
+    <TodoList/>
 
     </>
   );
