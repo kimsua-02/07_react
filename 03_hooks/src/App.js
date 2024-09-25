@@ -12,6 +12,10 @@ import Counter from './02_useReducer/03_mix-useReducer';
 import Question from './02_useReducer/03_1_question';
 import HardCalculator from './03_useMemo/01_hard-calculator';
 import ComplexCalcultor from './03_useMemo/02_complex-calculator';
+import UseMemoComponent from './03_useMemo/03_performance-useMemo';
+import LocationComponent from './03_useMemo/04_object-type-problem';
+import NumSquareCalculator from './03_useMemo/05_Number-square-calculator.js';
+import SqareCalculator from './03_useMemo/05_Number-square-calculator.js';
 
 function App() {
   const [message,setMessage] = useState("안녕하신지요");
@@ -30,7 +34,10 @@ function App() {
     {/* <Counter /> */}
     {/* <Question/> */}
     {/* <HardCalculator/> */}
-    <ComplexCalcultor/>
+    {/* <ComplexCalcultor/> */}
+    {/* <UseMemoComponent/> */}
+    {/* <LocationComponent/> */}
+    <SqareCalculator/>
 
     </>
   );
