@@ -17,6 +17,17 @@ import LocationComponent from './03_useMemo/04_object-type-problem';
 import NumSquareCalculator from './03_useMemo/05_Number-square-calculator.js';
 import SqareCalculator from './03_useMemo/05_Number-square-calculator.js';
 import TodoList from './03_useMemo/00_practice.js';
+import Category from './03_useMemo/00_1_categoly.js';
+import CallBackProblem from './04_useCallback/01_problem.js';
+import FunctionMemoization from './04_useCallback/02_funtion-memoization.js';
+import CallbackComponent from './04_useCallback/03_components.js';
+import CounterRef from './05_useRef/01_problem.js';
+import UseRefCounter from './05_useRef/02_useRef.js';
+import LoginComponent from './05_useRef/03_inputRef.js';
+import Board from './05_useRef/04_question.js';
+import Page from './06_useContext/01_props-dribbling.js';
+import ContextContainer from './06_useContext/02_useContext.js';
+import CustomHooks from './07_custom-hooks/02_custom-hooks.js';
 
 function App() {
   const [message,setMessage] = useState("안녕하신지요");
@@ -26,7 +37,6 @@ function App() {
     {/* <UseEffectMount/> */}
     {/* <UseEffectUpdate/> */}
     {/* <Container/> */}
-    {/* <TimeAdd/> */}
     {/* <Counter /> */}
     {/* <TodoApp /> */}
     {/* <UseReducerBasic /> */}
@@ -38,9 +48,20 @@ function App() {
     {/* <ComplexCalcultor/> */}
     {/* <UseMemoComponent/> */}
     {/* <LocationComponent/> */}
-    {/* <SqareCalculator/> */}
-    <TodoList/>
-
+    {/* <SqareCalculator/>s */}
+    {/* <TodoList/> */}
+    {/* <Category/> */}
+    {/* <CallBackProblem/>
+    <FunctionMemoization/>
+    <CallbackComponent/>
+    <CounterRef/>
+    <UseRefCounter/>
+    <LoginComponent/> */}
+    <Board/>
+    {/* <TimeAdd/> */}
+    {/* <Page/> */}
+    {/* <ContextContainer/> */}
+    {/* <CustomHooks/> */}
     </>
   );
 }

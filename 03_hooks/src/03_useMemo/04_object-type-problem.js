@@ -37,6 +37,7 @@ const LocationComponent = () => {
            <hr/>
            <h2>좋아하는 숫자를 입력해주세요</h2>
            <input type="number" value={number} onChange={e=>setNumber(e.target.value)}/>
+           <hr/>
         </>
     )
 }
