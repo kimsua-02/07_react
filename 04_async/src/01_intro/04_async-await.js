@@ -2,7 +2,7 @@
 
 /* 
     Promise : 비동기 작업의 결과를 처리하는 객체
-    asunc/await : 비동기 작업을 동기적으로 실행하는 것 처럼 보이게 만드는 구문
+    async/await : 비동기 작업을 동기적으로 실행하는 것 처럼 보이게 만드는 구문
     then() 과 await : promise 의 결과를 사용할 때
     then() 을 사용하거나 , async 함수 내에서 await 로 처리할 수 있음.
 */
