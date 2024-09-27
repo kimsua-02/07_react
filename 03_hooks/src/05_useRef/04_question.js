@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-// todolist 기능 까지는 구현. 50% 완성.
+// todolist 기능 까지는 구현. 50% 완성. (09/27)
 
 
-const Board = () => {
+export const Board = () => {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     const [posts, setPosts] = useState([]);
@@ -26,7 +26,6 @@ const Board = () => {
     }
 
 
-
     return (
         <>
             <div>
@@ -43,7 +42,7 @@ const Board = () => {
 
                 <input type="text" placeholder="검색" value={searchs} onChange={(e)=>setSearchs(e.target.value)}/>
 
-                <ul>
+                {/* <ul>
                     {posts.map((post) => (
                         <li key={post}>
                             <h2>{post.title}</h2>
@@ -51,11 +50,21 @@ const Board = () => {
                             <button onClick={() => deletePost(posts)}>삭제</button>
                         </li>
                     ))}
-                </ul>
+                </ul> */}
             </div>
             <hr/>
         </>
     )
+}
+
+export const BoardPost = () => {
+
+}
+
+const PostDelete = ({posts,onDelete}) => {
+    const [postBoard, setPostBoard] = useState(0);
+
+    
 }
 
 export default Board;

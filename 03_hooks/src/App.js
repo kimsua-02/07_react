@@ -58,7 +58,7 @@ function App() {
     <UseRefCounter/>
     <LoginComponent/> */}
     <Board/>
-    {/* <TimeAdd/> */}
+    <TimeAdd/>
     {/* <Page/> */}
     {/* <ContextContainer/> */}
     {/* <CustomHooks/> */}
