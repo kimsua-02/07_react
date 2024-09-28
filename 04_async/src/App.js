@@ -11,9 +11,9 @@ function App() {
       {/* <ApiComponent/> */}
       {/* <AxiosCallComponent/> */}
       {/* <EmojiContainer/> */}
-      {/* <Container/> */}
+      {/* <Container/> */} */
       {/* <Weather/> */}
-      <DemonicInsult/>
+      {/* <DemonicInsult/> */}
 
     </>
   );

@@ -7,6 +7,7 @@ const Weather = () => {
     const [cityName, setCityName] = useState(""); // 현재 도시 이름
     const [weather, setWeather] = useState({}); // 날씨 정보 저장
     const [wind, setWind] = useState({}); // 바람 정보 저장
+    const [error, setError] = useState(null); // 에러 처리
 
     useEffect (() => {
         new Promise((resolve, reject) => {
