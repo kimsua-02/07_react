@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const activeStyle = {
-        backgroundColor : "blue"
+        backgroundColor : "Hotpink"
     }
 
     return (

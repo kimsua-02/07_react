@@ -1,0 +1,16 @@
+.MenuItem {
+    width: 300px;
+    background-color: rgb(153, 223, 148);
+    cursor: pointer;
+    color: black;
+}
+
+.MenuItem:hover{
+    background-color: rgb(227, 233, 147);
+    color: rgb(1, 75, 1);
+}
+
+/* CSS 주의사항
+    - css 스타일을 생성하고 전역 변수 같이 사용해서는 X.
+        (import 를 할 때 [ import "./ ... " ] 처럼 바로 임포트를 하게 되면 같은 이름을 가진 css 파일끼리 영향을 받음.)
+*/
