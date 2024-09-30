@@ -1,0 +1,9 @@
+[
+    { "id": 1, "coffeeName": "에스프레소", "price": 3000, "description": "짙은 맛의 커피입니다." },
+    { "id": 2, "coffeeName": "아메리카노", "price": 4000, "description": "부드러운 커피의 대표작입니다." },
+    { "id": 3, "coffeeName": "카페라떼", "price": 5000, "description": "우유와 함께 부드러운 맛을 즐길 수 있습니다." },
+    { "id": 4, "coffeeName": "카푸치노", "price": 5000, "description": "거품이 많은 우유와 함께한 커피입니다." },
+    { "id": 5, "coffeeName": "바닐라 라떼", "price": 5500, "description": "바닐라 향이 나는 달콤한 커피입니다." },
+    { "id": 6, "coffeeName": "카페모카", "price" : 5900, "description": "진한 초콜릿과 고소한 에스프레소의 합동 와랄라 커피"}
+  ]
+  
