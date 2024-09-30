@@ -2,6 +2,8 @@
 
 const Home = () => {
     return (
-        <h1></h1>
+        <h1>커피 주문 사이트</h1>
     )
 }
+
+export default Home;

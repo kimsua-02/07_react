@@ -1,5 +1,5 @@
 import { useParams, useState, useEffect } from "react";
-import { getCoffeeMenuDetail } from '../api/CoffeeMenuApi';
+import { getCoffeeMenuDetail } from ''
 
 const CoffeeMenuDetail = () => {
     const {id} = useParams();
@@ -7,7 +7,8 @@ const CoffeeMenuDetail = () => {
     const [coffee, setCoffee] = useState({
         coffeeName : '',
         price : '',
-        detail : {description : ''}
+        detail : {description : ''},
+        order : {orderCheck : ''}
     },[]);
 
     useEffect(() => {
@@ -16,12 +17,12 @@ const CoffeeMenuDetail = () => {
 
     return (
         <>
-            <h2>{coffeeName}</h2>
+            <h2>{coffee}</h2>
             <h3>가격 : {coffee.price}</h3>
             <h3>설명 : {coffee.detail.description}</h3>
 
-            {/* <button onClick={}>장바구니 추가</button><br/>
-            <button onClick={}>돌아가기</button> */}
+            <button onClick={coffee.orderCheck}>장바구니 추가</button>
+            {/* <button onClick={}>돌아가기</button> */}
         </>
     )
 };
