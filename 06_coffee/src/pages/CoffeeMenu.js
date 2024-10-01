@@ -22,7 +22,7 @@ const CoffeeMenu = () => {
         
     }
 
-    // 예) 에스프레스 - 3,000원을 클릭하면 메뉴 설명이 나옴.(CoffeeMenuDetail 에서 받아옴.)
+    // 예) 에스프레스 - 3,000원을 클릭하면 메뉴 설명이 나옴.(CoffeeMenuItem 에서 받아옴.)
     return(
         <>
             <h2>메 뉴</h2>

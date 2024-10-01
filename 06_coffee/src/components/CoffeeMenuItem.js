@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import CoffeeMenu from '../pages/CoffeeMenu';
 // import { price } from '../data/CoffeeMenu-detail.json';
 
 // CoffeeMenuItem 컴포넌트는 홈에서 메뉴 클릭 > 메뉴에서 CoffeeName(아무거나) 클릭 > CoffeeName 의 설명을 구현하는 컴포넌트.
