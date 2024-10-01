@@ -1,5 +1,6 @@
 import { useParams, useState, useEffect } from "react";
 import { getCoffeeMenuDetail } from '../api/CoffeeMenuApi';
+import { Link } from 'react-router-dom';
 
 const CoffeeMenuDetail = () => {
     const {id} = useParams();
@@ -17,12 +18,11 @@ const CoffeeMenuDetail = () => {
 
     return (
         <>
-            <h2>{coffee}</h2>
-            <h3>가격 : {coffee.price}</h3>
-            <h3>설명 : {coffee.detail.description}</h3>
+            <Link to={`/coffeeMenu/${coffee.id}`}>
+                <div>
 
-            <button onClick={coffee.orderCheck}>장바구니 추가</button>
-            {/* <button onClick={}>돌아가기</button> */}
+                </div>
+            </Link>
         </>
     )
 };
