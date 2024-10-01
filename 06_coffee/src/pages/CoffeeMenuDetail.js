@@ -1,5 +1,5 @@
 import { useParams, useState, useEffect } from "react";
-import { getCoffeeMenuDetail } from ''
+import { getCoffeeMenuDetail } from '../api/CoffeeMenuApi';
 
 const CoffeeMenuDetail = () => {
     const {id} = useParams();

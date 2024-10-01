@@ -1,13 +1,14 @@
-import Header from '../components/Header'
 import Navbar from '../components/Navbar';
 import { Outlet } from "react-router-dom";
+import Home from '../pages/Home';
 
-
+// 
 const Layout = () => {
     return (
         <>
-            <Header/>
+            <h1>커피 주문 사이트</h1>
             <Navbar/>
+            <Home/>
             <Outlet/>
         </>
     )
